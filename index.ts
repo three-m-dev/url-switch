@@ -1,4 +1,4 @@
-import puppeteer from 'puppeteer';
+import * as puppeteer from 'puppeteer';
 import urls from './urls.json';
 
 const delay = (time: number): Promise<void> => new Promise((res) => setTimeout(res, time));
@@ -6,7 +6,7 @@ const delay = (time: number): Promise<void> => new Promise((res) => setTimeout(r
 (async () => {
   const browser = await puppeteer.launch({
     headless: false,
-    args: ['--start-fullscreen', '--kiosk'],
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--start-fullscreen', '--kiosk'],
   });
 
   const pages = await Promise.all(
