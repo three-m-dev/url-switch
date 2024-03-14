@@ -20,7 +20,7 @@ const delay = (time: number): Promise<void> => new Promise((res) => setTimeout(r
     })
   );
 
-  const waitTime = 15000;
+  const waitTime = 60000;
 
   while (true) {
     for (const page of pages) {
