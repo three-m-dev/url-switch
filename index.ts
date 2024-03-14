@@ -6,6 +6,7 @@ const delay = (time: number): Promise<void> => new Promise((res) => setTimeout(r
 (async () => {
   const browser = await puppeteer.launch({
     headless: false,
+    executablePath: '/usr/bin/chromium-browser',
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--start-fullscreen', '--kiosk'],
   });
 
