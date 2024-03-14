@@ -10,7 +10,7 @@
 
 1. mkdir Code
 2. cd Code
-3. git clone https://github.com/three-m-dev/{repository_name}.git
+3. git clone https://github.com/three-m-dev/url-switch.git
 
 ## Navigate to the directory & install packages
 
@@ -30,5 +30,5 @@
 ## Clear & restart
 
 1. cd .. (navigate backwards to Code directory)
-2. sudo rm -rf {repository_name}
-3. Start from beginning
+2. sudo rm -rf url-switch
+3. start from beginning
