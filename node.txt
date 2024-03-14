@@ -1,6 +1,0 @@
-wget https://nodejs.org/dist/latest/node-v$(wget -qO- https://nodejs.org/dist/latest/ | grep -Po 'href="node-v[0-9.]+-linux-armv7l.tar.xz"' | sed -n 's/.*href="node-v\([0-9.]\+\)-linux-armv7l.tar.xz".*/\1/p' | head -1)-linux-armv7l.tar.xz
-
-tar -xvf node-v*-linux-armv7l.tar.xz
-
-cd node-v*-linux-armv7l/
-sudo cp -R * /usr/local/
